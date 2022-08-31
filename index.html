@@ -15,6 +15,18 @@ struct ExampleView: View {
  }
 }
 
+VStack {
+ Rectangle()
+ .fill(Color.blue)
+ .frame(width: 200, height: 200)
+ Button(action: {
+ }) {
+ Text("Rotate")
+ }
+ }
+ .padding(10)
+ }
+}
 
 
 
