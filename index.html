@@ -1,32 +1,44 @@
+
+/*:
+ Homework 1
+ Malek Mkaddem
+ 08/29/2022
+ */
+
+import SwiftUI
+import PlaygroundSupport
+/**:
+# This will call str variable and screen print it
+ */
+var str = "Hello,from Malek Mkaddem"
+print(str)
+
+/**:
+ # This will screen print a rectangle based on color and size input
+ */
 struct ExampleView: View {
-
- var body: some View {
-
- VStack {
- Rectangle()
- .fill(Color.blue)
- .frame(width: 200, height: 200)
- Button(action: {
- }) {
- Text("Rotate")
- }
- }
- .padding(10)
- }
+    
+    var body: some View {
+        
+        VStack {
+            Rectangle()
+                .fill(Color.green)
+                .frame(width: 200, height: 200)
+            Button(action: {
+            }) {
+                Text("Rotate")
+            }
+        }
+        .padding(10)
+    }
 }
 
-VStack {
- Rectangle()
- .fill(Color.blue)
- .frame(width: 200, height: 200)
- Button(action: {
- }) {
- Text("Rotate")
- }
- }
- .padding(10)
- }
-}
+
+
+
+PlaygroundPage.current.setLiveView(ExampleView().padding(100))
+
+
 
 
 
